@@ -112,17 +112,13 @@ for (let i = 3; i < students.length; i++) {
 }
 
 
-// Challenge 10
+// Challenge 10 - Complete
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
-const studentsCopy = [];
+const sliceStudents = [];
 
-for (let i = 3; i < students.length; i++) {
-  let sliceStudent = students.slice(i);
-  studentsCopy.push(sliceStudent);
-  if (i > 10) {
-    break
-  }
-  console.log(studentsCopy[i]);
+for (let i = 3; i <= 10; i++) {
+  let sliceStudents = students[i];
+  console.log(sliceStudents);
 }
 
 
